@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include <stdlib.h>
-size_t ft_strlen(const char *s);
+#include "libft.h"
 
 char *ft_strjoin(char const *s1, char const *s2)
 {
@@ -25,6 +25,5 @@ char *ft_strjoin(char const *s1, char const *s2)
         i++;
     }
     joinstr[ft_strlen(s1) + i] = '\0';
-    return (joinstr);
-    
+    return (joinstr);    
 }

@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <stddef.h>
-
-size_t ft_strlen(const char *s);
+#include "libft.h"
 
 int is_set(char c, char const *set)
 {
