@@ -14,7 +14,7 @@
 
 int	main(void)
 {
-	char buf[] = "";
+	char buf[] = " gorge  floyd  nigger    d";
 	char **split = ft_split(buf , ' ');
 	int i = 0;
 	//printf("%s\n", ft_split(buf , ' ');
