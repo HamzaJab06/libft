@@ -12,15 +12,10 @@
 #include <stdio.h>
 #include "libft.h"
 
+
 int	main(void)
 {
-	char buf[] = " gorge  floyd  nigger    d";
-	char **split = ft_split(buf , ' ');
-	int i = 0;
-	//printf("%s\n", ft_split(buf , ' ');
-	while (split[i])
-	{
-		printf("%s\n", split[i++]);
-	}
-
+    printf("\n" );
+    ft_putnbr_fd(-5234,1);
 }
+
