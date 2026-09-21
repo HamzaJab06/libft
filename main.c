@@ -6,16 +6,29 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/07 13:42:21 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/15 14:56:13 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/21 18:08:08 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
 #include "libft.h"
 
-
 int	main(void)
 {
-    printf("\n" );
-    ft_putnbr_fd(-5234,1);
-}
+	t_list	*a;
+	t_list	*b;
+	t_list	*c;
 
+	a = NULL;
+	b = ft_lstnew("B");
+	c = ft_lstnew("C");
+
+	//a->next = b;
+	//b->next = c;
+
+	printf("Size: %u\n", ft_lstsize(a));
+
+	free(c);
+	free(b);
+	free(a);
+	return (0);
+}

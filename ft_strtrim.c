@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 14:52:35 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/16 14:54:44 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/20 14:11:53 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,27 @@ int	is_set(char c, char const *set)
 	return (0);
 }
 
+char	*copy_allocate(int j, int i, char **trimstr, char const *s1)
+{
+	int	index;
+
+	index = 0;
+	*trimstr = (char *)malloc(j - i + 2);
+	if (!(*trimstr))
+		return (NULL);
+	while (i < j + 1)
+		(*trimstr)[index++] = s1[i++];
+	(*trimstr)[index] = '\0';
+	return (*trimstr);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		i;
 	int		j;
-	int		ind;
 	char	*trimstr;
 
 	i = 0;
-	ind = 0;
 	j = ft_strlen(s1) - 1;
 	while (is_set(s1[i], set))
 		i++;
@@ -45,17 +57,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 		trimstr = (char *)malloc(1);
 		if (!trimstr)
 			return (NULL);
+		trimstr[0] = '\0';
+		return (trimstr);
 	}
 	else
 	{
 		while (is_set(s1[j], set) == 1)
 			j--;
-		trimstr = (char *)malloc(j - i + 2);
-		if (!trimstr)
-			return (NULL);
-		while (i < j + 1)
-			trimstr[ind++] = s1[i++];
+		return (copy_allocate(i, j, &trimstr, s1));
 	}
-	trimstr[ind] = '\0';
-	return (trimstr);
 }
