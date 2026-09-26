@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 12:55:26 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/22 17:55:09 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/26 19:46:07 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <stdint.h>
+# include <unistd.h>
 
 typedef struct s_list
 {

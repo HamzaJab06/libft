@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 14:52:35 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/20 14:11:53 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/24 18:52:10 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*trimstr;
 
 	i = 0;
+	if (s1[0] == '\0')
+		return (ft_strdup(""));
 	j = ft_strlen(s1) - 1;
 	while (is_set(s1[i], set))
 		i++;
@@ -64,6 +66,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	{
 		while (is_set(s1[j], set) == 1)
 			j--;
-		return (copy_allocate(i, j, &trimstr, s1));
+		return (copy_allocate(j, i, &trimstr, s1));
 	}
 }

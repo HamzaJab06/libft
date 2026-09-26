@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 14:08:25 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/16 14:48:45 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/24 18:42:08 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ int	count_words(char const *s, char c)
 				i++;
 			count++;
 		}
-		i++;
+		else
+			i++;
 	}
 	return (count);
 }
