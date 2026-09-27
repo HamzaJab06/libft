@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 18:48:55 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/12 16:06:13 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/27 13:27:24 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stddef.h>
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	str = ((char *)s) + i;
 	while (1)
 	{
-		if (*str == (unsigned char)c)
+		if ((unsigned char)*str == (unsigned char)c)
 			return (str);
 		else
 		{

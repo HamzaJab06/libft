@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 14:52:35 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/24 18:52:10 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/27 14:02:02 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stddef.h>
 #include "libft.h"
 
-int	is_set(char c, char const *set)
+static int	is_set(char c, char const *set)
 {
 	int	i;
 
@@ -28,7 +28,7 @@ int	is_set(char c, char const *set)
 	return (0);
 }
 
-char	*copy_allocate(int j, int i, char **trimstr, char const *s1)
+static char	*copy_allocate(int j, int i, char **trimstr, char const *s1)
 {
 	int	index;
 

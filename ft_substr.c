@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 14:24:28 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/22 14:43:01 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/27 14:18:23 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 #include <stdlib.h>
 #include "libft.h"
 
-char	*copy_allocate(size_t substr_size, char **substr,
-		int start, char const *s)
+static char	*copy_allocate(size_t substr_size, char **substr,
+		unsigned int start, char const *s)
 {
 	size_t	i;
 

@@ -6,14 +6,14 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 14:08:25 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/24 18:42:08 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/27 14:00:35 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-int	count_words(char const *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int	i;
 	int	count;
@@ -34,7 +34,7 @@ int	count_words(char const *s, char c)
 	return (count);
 }
 
-void	freeall(char **list, int p)
+static void	freeall(char **list, int p)
 {
 	int	i;
 
@@ -47,7 +47,7 @@ void	freeall(char **list, int p)
 	free(list);
 }
 
-void	creat_word(char const *s, char c, int *ch, int *wordlen)
+static void	creat_word(char const *s, char c, int *ch, int *wordlen)
 {
 	*wordlen = 0;
 	while (s[*ch] == c)
@@ -59,7 +59,7 @@ void	creat_word(char const *s, char c, int *ch, int *wordlen)
 	}
 }
 
-void	fill_word(char *list, char const *s, int wordlen, int ind)
+static void	fill_word(char *list, char const *s, int wordlen, int ind)
 {
 	int	i;
 

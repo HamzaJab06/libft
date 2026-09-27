@@ -6,9 +6,12 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 14:39:15 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/26 19:29:22 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/27 13:32:09 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdlib.h>
+#include <stdint.h>
 
 void	*ft_calloc(size_t n, size_t size)
 {

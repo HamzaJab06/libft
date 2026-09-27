@@ -6,14 +6,14 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 13:27:21 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/20 13:35:36 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/27 13:53:11 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-int	count_digits(int n, int sign)
+static int	count_digits(int n, int sign)
 {
 	int	digits;
 
@@ -30,7 +30,7 @@ int	count_digits(int n, int sign)
 	return (digits);
 }
 
-void	putnum(int n, char *nbr, int *i)
+static void	putnum(int n, char *nbr, int *i)
 {
 	if (n >= 10)
 		putnum(n / 10, nbr, i);

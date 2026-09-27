@@ -6,14 +6,14 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 12:24:54 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/20 13:23:57 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/27 13:54:11 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "libft.h"
 
-void	writenum(int n, int fd)
+static void	writenum(int n, int fd)
 {
 	if (n >= 10)
 		writenum((n / 10), fd);
