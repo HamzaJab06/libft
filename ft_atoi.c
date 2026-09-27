@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 13:46:00 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/12 14:02:08 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/27 17:56:29 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	sign;
-	int	sum;
+	long	sum;
 
 	sum = 0;
 	i = 0;
