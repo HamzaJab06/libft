@@ -75,7 +75,7 @@ Then compile your program with the library:
 - `ft_strtrim` - Removes specified characters from the beginning and end of a string.
 - `ft_split` - Splits a string using a delimiter.
 - `ft_itoa` - Converts an integer to a string.
-- `ft_strmapi` - Applies a function to each character of a string.
+- `ft_strmapi` - Applies a function to each character of a string and stores the result in new allocated string"
 - `ft_striteri` - Applies a function to each character while passing its index.
 
 ## Memory Functions

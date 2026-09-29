@@ -6,11 +6,10 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/10 17:31:56 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/10 17:43:07 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 16:45:17 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)

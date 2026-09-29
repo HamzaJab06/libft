@@ -6,12 +6,10 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/20 14:24:28 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/27 14:18:23 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 16:37:51 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static char	*copy_allocate(size_t substr_size, char **substr,

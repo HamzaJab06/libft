@@ -6,14 +6,16 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 13:46:00 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/27 17:56:29 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 14:49:52 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_atoi(const char *nptr)
 {
-	int	i;
-	int	sign;
+	int		i;
+	int		sign;
 	long	sum;
 
 	sum = 0;

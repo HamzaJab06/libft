@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 16:48:35 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/27 14:17:27 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 17:32:20 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	void	*newcontent;
 
 	newlist = NULL;
+	if (!lst || !f || !del)
+		return (NULL);
 	while (lst)
 	{
 		newcontent = f(lst->content);

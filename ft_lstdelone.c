@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/22 14:36:08 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/22 15:48:56 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 17:28:59 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	del(lst->content);
-	free(lst);
+	if (lst && del)
+	{
+		del(lst->content);
+		free(lst);
+	}
 }

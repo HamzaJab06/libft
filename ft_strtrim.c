@@ -6,12 +6,10 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 14:52:35 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/27 14:02:02 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 16:38:32 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stddef.h>
 #include "libft.h"
 
 static int	is_set(char c, char const *set)

@@ -6,10 +6,11 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 12:56:26 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/24 16:55:48 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 16:39:15 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

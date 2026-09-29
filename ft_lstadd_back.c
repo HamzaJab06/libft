@@ -6,7 +6,7 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/21 20:00:19 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/22 14:44:12 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 17:35:28 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,12 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 {
 	t_list	*last;
 
-	last = ft_lstlast(*lst);
-	if (last)
-		last->next = new;
-	else
-		*lst = new;
+	if (lst && new)
+	{
+		last = ft_lstlast(*lst);
+		if (last)
+			last->next = new;
+		else
+			*lst = new;
+	}
 }

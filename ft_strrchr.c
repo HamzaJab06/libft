@@ -6,10 +6,10 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 18:48:55 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/27 13:27:24 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 16:38:48 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)

@@ -6,12 +6,10 @@
 /*   By: hjabarin <hjabarin@learner.42.tech>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/16 13:57:00 by hjabarin          #+#    #+#             */
-/*   Updated: 2026/09/16 14:01:48 by hjabarin         ###   ########.fr       */
+/*   Updated: 2026/09/29 16:45:49 by hjabarin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
